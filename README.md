@@ -1,13 +1,13 @@
 # Financial Data Pipeline (Modern Data Stack PoC)
 
-## 🚧 Project Status: In Progress (Nov 2025 - Present)
+## Project Status: In Progress (Nov 2025 - Present)
 > **Note:** This repository creates a production-grade financial data platform. I am currently building the core infrastructure and ingestion pipelines.
 
-## 🎯 Objective
+## Objective
 To demonstrate a **modern, scalable, and testable** data pipeline architecture suitable for financial data analysis and algorithmic trading preparation.
 This project focuses on **"Asset-centric" orchestration** and **"Python-native" engineering practices**, moving away from traditional task-based workflows.
 
-## 🛠 Tech Stack & Architecture Strategy
+## Tech Stack & Architecture Strategy
 
 ### 1. Orchestration: [Dagster](https://dagster.io/)
 * **Role:** Unified control plane for data assets.
@@ -22,7 +22,7 @@ This project focuses on **"Asset-centric" orchestration** and **"Python-native" 
     * To implement modular data modeling (Staging -> Intermediate -> Marts).
     * For built-in documentation and data quality tests.
 
-### 3. Compute & Storage: [DuckDB](https://duckdb.org/) 🦆
+### 3. Compute & Storage: [DuckDB](https://duckdb.org/)
 * **Role:** In-process OLAP database for high-performance analytics.
 * **Architectural Decision (Why not Spark?):**
     * While **Apache Spark** is the standard for petabyte-scale distributed processing, I strategically selected **DuckDB** for this project.
@@ -36,7 +36,7 @@ This project focuses on **"Asset-centric" orchestration** and **"Python-native" 
 ### 5. Data Source
 * **APIs:** `yfinance`, `Alpha Vantage` (Planned)
 
-## 🚀 Roadmap & Milestones
+## Roadmap & Milestones
 
 - [ ] **Phase 1: Foundation & Ingestion**
     - [ ] Setup Dagster project structure with Poetry.
@@ -54,4 +54,4 @@ This project focuses on **"Asset-centric" orchestration** and **"Python-native" 
     - [ ] (Future) Integrate a simple ML prediction model asset.
 
 ---
-*Author: [Yuki Umezawa / sysder]*
+*Author: Yuki Umezawa (@sysder)*
