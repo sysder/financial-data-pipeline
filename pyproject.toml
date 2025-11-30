@@ -1,0 +1,22 @@
+[project]
+name = "financial-data-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dagster>=1.12.3",
+    "dagster-webserver>=1.12.3",
+    "pandas>=2.3.3",
+    "polars>=1.35.2",
+    "yfinance>=0.2.66",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "ruff>=0.14.7",
+]
+
+[tool.dagster]
+module_name = "financial_data_pipeline"
