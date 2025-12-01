@@ -34,7 +34,11 @@ This project focuses on **"Asset-centric" orchestration** and **"Python-native" 
     * To replace legacy Pandas for better memory management and speed (Rust-based).
 
 ### 5. Data Source
-* **APIs:** `yfinance`, `Alpha Vantage` (Planned)
+* **Primary (Structured):**
+    * `yfinance` (OHLCV Data)
+* **Alternative Data (Unstructured / In Progress):**
+    * **Source:** News/RSS Feeds & Sentiment Data
+    * **Goal:** To demonstrate capability in handling **"messy, unstructured data"** (HTML parsing, text cleaning, entity extraction) and joining it with structured time-series data.
 
 ## Roadmap & Milestones
 
